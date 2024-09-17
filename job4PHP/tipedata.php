@@ -5,12 +5,13 @@ $c = $a + 5;
 $d = $b + 10;
 $e = $d - $c;
 
-echo "Varble a: {$a} <br>";
-echo "Varble b: {$b} <br>";
-echo "Varble c: {$c} <br>";
-echo "Varble d: {$d} <br>";
-echo "Varble e: {$e} <br>";
+echo "Variable a: {$a} <br>";
+echo "Variable b: {$b} <br>";
+echo "Variable c: {$c} <br>";
+echo "Variable d: {$d} <br>";
+echo "Variable e: {$e} <br>";
 
+// var_dump() untuk menmpilkan informasi satu atau lebih variable
 var_dump($e);
 echo "<br><br>";
 
