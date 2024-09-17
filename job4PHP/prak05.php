@@ -1,30 +1,30 @@
 <?php
 // array of students with their names and grades
-$studentsGrades = [
-    ['name' => 'Alice', 'grade' => 85],
-    ['name' => 'Bob', 'grade' => 92],
-    ['name' => 'Charlie', 'grade' => 78],
-    ['name' => 'David', 'grade' => 64],
-    ['name' => 'Eva', 'grade' => 90],
+$nilaiMhs = [
+    ['nama' => 'Alice', 'grade' => 85],
+    ['nama' => 'Bob', 'grade' => 92],
+    ['nama' => 'Charlie', 'grade' => 78],
+    ['nama' => 'David', 'grade' => 64],
+    ['nama' => 'Eva', 'grade' => 90],
 ];
 
 // calculate the class average
-$totalGrades = 0;
-$numStudents = count($studentsGrades);
+$nilaiTotal = 0;
+$numMhs = count($nilaiMhs);
 
-foreach ($studentsGrades as $student) {
-    $totalGrades += $student['grade'];
+foreach ($nilaiMhs as $mhs) {
+    $nilaiTotal += $mhs['grade'];
 }
 
-$averageGrade = $totalGrades / $numStudents;
+$nilaiRataRata = $nilaiTotal / $numMhs;
 
 // display students who scored above the class average
-echo "Class average grade: $averageGrade<br>";
+echo "Class average grade: $nilaiRataRata<br>";
 echo "Students who scored above the average:<br>";
 
-foreach ($studentsGrades as $student) {
-    if ($student['grade'] > $averageGrade) {
-        echo "Name: {$student['name']}, Grade: {$student['grade']}<br>";
+foreach ($nilaiMhs as $mhs) {
+    if ($mhs['grade'] > $nilaiRataRata) {
+        echo "nama: {$mhs['nama']}, Grade: {$mhs['grade']}<br>";
     }
 }
 ?>

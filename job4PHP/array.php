@@ -7,7 +7,8 @@ if($nilai >= 70) {
 $nilaiLulus [] = $nilai;
     }
 }
-echo "Daftar nilai siswa yang lulus: " . implode(', ', $nilaiLulus);
+// implode untuk menggabungkan elemen dari array
+echo "Daftar nilai siswa yang lulus: " . implode(', ', $nilaiLulus); 
 
 $daftarNilai = [
     'Matematika' => [

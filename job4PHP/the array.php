@@ -11,7 +11,7 @@ $daftarKaryawan = [
     foreach ($daftarKaryawan as $karyawan) {
     if ($karyawan[1] > 5) {
     $karyawanPengalamanLimaTahun[] = $karyawan[0];
-    }
+        }
     }
     
     echo "Daftar karyawan dengan pengalaman kerja lebih dari 5 tahun: " . implode(', ',
