@@ -6,6 +6,8 @@ if (empty($myArray)) {
     echo "Array is not empty";
 }
 
+echo "<br><br>";
+
 if (empty($nonExistentVar)) {
     echo "Variable is empty";
 } else {
