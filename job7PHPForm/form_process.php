@@ -4,6 +4,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
 
     echo "Nama: " . $nama . "<br>";
-    echo "Email: " . $email . "<br>";
+    echo "Email: " . $email;
 }
 ?>
