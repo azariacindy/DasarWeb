@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row">
-        <?php 
+    <?php 
         require 'admin/template/menu.php';
         $id = $_GET['id'];
         $query = "SELECT * FROM jabatan WHERE id = '$id'";
